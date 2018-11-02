@@ -30,7 +30,7 @@ videojs.registerPlugin('pluginName', function() {
       document.getElementById("playerLightbox").className = "playerHide";
     }
 
-    videojs("myPlayerID").ready(function(){
+    videojs.getPlayer('myPlayerID').ready(function() {
       myPlayer = this;
 
       myPlayer.one('loadedmetadata', function() {

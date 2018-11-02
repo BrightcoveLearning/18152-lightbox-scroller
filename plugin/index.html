@@ -19,21 +19,21 @@
     <div id="playerLightbox" class="playerHide">
 
        <!-- Player embed code -->
-        <video id="myPlayerID"
+        <video-js id="myPlayerID"
           data-playlist-id="5686354139001"
         	data-account="1752604059001"
         	data-player="default"
         	data-embed="default"
         	data-application-id
         	class="video-js"
-        	controls></video>
-        <script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+        	controls></video-js>
+        <script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
       <div id="playerClose" class="playerClose" onClick="hideAndStop();">Close</div>
 		</div>
 
     <script type="text/javascript" src="lightbox-scroller.js"></script>
-    <script>videojs('myPlayerID').lightboxScroller();</script>
+    <script>videojs.getPlayer('myPlayerID').lightboxScroller();</script>
 
 </body>
 </html>
